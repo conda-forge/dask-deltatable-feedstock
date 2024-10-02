@@ -1,13 +1,13 @@
 {% set name = "dask-deltatable" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dask-deltatable-{{ version }}.tar.gz
-  sha256: 25885d186cf05525c21cd5895f599a0b68427ff3f88878eb926dc4a5c6c5e522
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a3c3d931d8f1b66d916af083014900c19d56be20e0c3f248669c27c0b1b9ab56
 
 build:
   noarch: python
